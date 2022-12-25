@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
+
+    <link type="image/x-icon" rel="icon" href="./Images/Cube_2.png" />
     <link href="./CSS/index.css" type="text/css" rel="stylesheet" /> 
 
 
@@ -14,10 +16,10 @@
     <header>
         <nav>
             <ul>
-                <li><img src="./Images/cubes.png" alt="Imagem de um cubo"></li>
-                <li><a href=""> html       </a></li>
-                <li><a href=""> css        </a></li>
-                <li><a href=""> javascript </a></li>
+                <li><img id="logo" src="./Images/cubes.png" alt="Imagem de um cubo"></li>
+                <li><a href="">html </a></li>
+                <li><a href="">css </a></li>
+                <li><a href="">javascript </a></li>
             </ul>
         </nav> 
     </header>
@@ -31,15 +33,13 @@
                 <div class="explicar-linguagem">
                     &nbsp; &nbsp;HTML <em>não</em> é uma linguagem de programação, e sim uma linguagem de marcação de texto. Não se pode dizer 
                     "eu sou programador de HTML" ou "eu programo em HTML", HTML significa "Hyper Text Markup Language", em português, "Linguagem de marcação
-                    de hyper texto". </br>
+                    de hiper texto". 
                 </div>
-
                 <div class="explicar-linguagem">
                     &nbsp; &nbsp;O HTML é utilizado para <strong>estruturar sua página</strong>, esta estruturação na página permite você criar títulos, 
                     parágrafos, colocar imagens, colocar videos e envolver ou marcar diferentes partes do conteúdo, é exatamente como o 
-                    próprio nome já diz "linguagem de marcação de texto". </br>
+                    próprio nome já diz "linguagem de marcação de texto".
                 </div>
-                
                 <div class="explicar-linguagem">
                     &nbsp; &nbsp;O HTML nos da infinitas possibilidades de estruturação, mas é importante saber que devemos 
                     seguir um "padrão" que ocorre e tentar ao máximo construir uma estrutura agradável ao usuário. Um exeplo 
@@ -48,36 +48,58 @@
                     ser em casos <em>extremamente</em> específicos). Estruturar uma página em HTML irá demandar o conhecimento sobre <strong>"tags"</strong>, 
                     também conhecidas como <strong>"elementos"</strong>.
                 </div>
+            </p>
 
 
 
-                <h2> O que são tags / elementos? </h2>
+            <h2> O que são tags / elementos? </h2>
+            <p>    
                 <div class="explicar-linguagem">
-                    &nbsp; &nbsp;O HTML é utilizado para <strong>estruturar sua página</strong>, esta estruturação na página permite você criar títulos, 
-                    parágrafos, colocar imagens, colocar videos e envolver ou marcar diferentes partes do conteúdo, é exatamente como o 
-                    próprio nome já diz "linguagem de marcação de texto". </br>
+                    &nbsp; &nbsp;O HTML é utilizado para <strong>estruturar sua página</strong>, esta estruturação permite você criar títulos, 
+                    parágrafos, colocar imagens, colocar videos, marcar conteúdos importantes e entre outras coisas, é exatamente como o 
+                    próprio nome já diz "linguagem de marcação de texto". 
                 </div>
                 
                 <div class="explicar-linguagem">
                     &nbsp; &nbsp;O HTML nos da infinitas possibilidades de estruturação, mas é importante saber que devemos 
-                    seguir um "padrão" que ocorre e tentar ao máximo construir uma estrutura agradável ao usuário. Um exeplo 
-                    de estruturação está neste próprio site, perceba que a navegação entre páginas foi colocada na parte superior 
-                    do site e ela também pode ser colocada ao lado esquerdo, mas jamais deveria ser colocada ao lado direito ou embaixo (a não
-                    ser em casos <em>extremamente</em> específicos). Estruturar uma página em HTML irá demandar o conhecimento sobre <strong>"tags"</strong>, 
-                    também conhecidas como <strong>"elementos"</strong>.
+                    seguir o "padrão" que ocorre na web, e tentar ao máximo construir uma estrutura agradável ao usuário. Um 
+                    exeplo de estruturação está neste próprio site, perceba que a navegação entre páginas foi colocada na parte superior 
+                    do site e ela também poderia colocada ao lado esquerdo, mas a navegação jamais deveria ser colocada ao lado 
+                    direito ou embaixo (a não ser em casos <em>extremamente</em> específicos). 
                 </div>
                 <div class="explicar-linguagem">
-                    &nbsp; &nbsp;Uma tag é a mesma coisa que um elemento, diga de forma que preferir. 
-                    Utilizamos das tags de HTML para formar a estrutura em si. Por exemplo, caso você queira colocar 
-                    um título principal em sua página, você irá digitar a seguinte tag: <div id="cu">
+                    &nbsp; &nbsp;Estruturar uma página em HTML irá demandar o conhecimento sobre as <strong>"tags"</strong>, também conhecidas como <strong>"elementos"</strong> (uma tag é a mesma coisa que um elemento, diga de forma que preferir). 
+                    Utilizamos das tags de HTML para formar a estrutura em si, seja a criação de títulos, botões, listas, tabelas, parágrafos.. Por exemplo, 
+                    caso você queira colocar  um título principal em sua página, você irá utilizar da tag "<code>h1</code>": <div id="cu">
 <pre> <code> 
  <span class="element-body-color">&lt;body&gt;</span> 
 
     <span class="element-h1-color">&lt;h1&gt;</span> título principal! <span class="element-h1-color">&lt;&sol;h1&gt;</span> 
 
- <span class="element-body-color">&lt;body&gt;</span>
+ <span class="element-body-color">&lt;&sol;body&gt;</span>
 </code> </pre> </div>
                 </div>
+                <div class="explicar-linguagem">
+                    Perceba que para criarmos um título foi necessário algumas coisas, tais como.:
+                    <ul id="tag-composition"> 
+                        <li>Abrimento de tag: <code> &lt;h1&gt; </code> </li>
+                        <li>Conteúdo da tag: título principal! </li>
+                        <li>Fechamento da tag: <code> &lt;&sol;h1&gt; </code> </li> 
+                    </ul>  
+                    </br>&nbsp; &nbsp; Quando abrimos uma tag estamos informando ao HTML qual conteúdo desejamos criar, 
+                    neste caso, o h1 foi colocado pois é a tag responsável por criar títulos. O nome "h1" não é algo aleatório, 
+                    a letra "H" significa <a href="https://www.oxfordlearnersdictionaries.com/us/definition/english/heading?q=Heading">"heading"</a>, 
+                    e de acordo com o dicionário online da <cite><a href="https://www.oxfordlearnersdictionaries.com/">Oxford</a></cite>, a palavra "heading" pode ser traduzida como um título impresso no topo de uma página ou no início de uma seção de um livro. 
+                    Neste momento você pode se perguntar o motivo do número na tag, mas é um conceito bem simples. O número que acompanha a letra "H" é o level deste título, logo, quanto menor o level, mais importante este título é.
+                    Por exemplo a tag <code>&lt;h1&gt;</code> é o título principal da página (level 1), já o <code>&lt;h2&gt;</code> é o título dado a parágrafos, um título com menos importância (por isso é level 2).
+                    A variação de título vai do level um (h1) até o level seis (h6), sendo o "h1" e o "h2" os mais utilizados.  
+                    <!-- <em>Alguns exemplos da diferença entre <code>&lt;h1&gt;</code> e <code>&lt;h2&gt;</code></em>: -->
+                    <!-- <img class="dif-between-titles" src="./Images/Receita.jpg" alt="Receita da magali" /> -->
+                    <!-- <img class="dif-between-titles" src="./Images/Receita.jpg" alt="Receita da magali" /> -->
+
+                </div>
+
+
 
             </p>
 
