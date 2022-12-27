@@ -72,8 +72,8 @@ section h2{
     position: relative;
 }
 
-div + div{ 
-    margin-top: 2px;
+p + p{ 
+    margin-top: 3%;
 }
 
 .explicar-linguagem{
@@ -83,17 +83,19 @@ div + div{
 }
 
 
-p + h2{
+div + h2{
     border-top: 1px solid rgba(147, 146, 146, 0.484);
     border-radius: 3px;
-    margin-top: 40px;
-    padding-top: 10px;
+    margin-top: 44px;
+    padding-top: 12px;
 }
 
 
 
 pre{
     margin-top: 19px;
+    margin-bottom: 3px;
+
     border: 2px solid rgb(45, 42, 42);
     border-radius: 18px;
     background-color: #403c3c;
@@ -107,13 +109,17 @@ section a{
 
 #tag-composition{
     padding-left: 22px;
+    font-size: 18.4px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: rgb(188, 185, 185);
 }
 
-.dif-between-titles{
-    border-radius: 12px;
+
+img#image-example{ 
+    border-radius: 8px;
+    margin: 10px 0px 0px 10px; 
 }
-
-
 .element-body-color{ 
     color: rgb(242, 102, 86);
 }
